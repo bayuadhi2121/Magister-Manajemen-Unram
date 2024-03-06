@@ -27,7 +27,7 @@
             <h1 class="text-5xl text-myprimary font-bold">Pengumuman</h1>
 
             <div class="flex flex-wrap justify-between text-mydark gap-[40px]">
-                @for ($i = 0; $i <= 10; $i++)
+                @for ($i = 1; $i <= 10; $i++)
                     <article class="min-w-[250px] max-w-[500px] flex-[1_1_35%] space-y-4">
                         <h2 class="text-[18px] text-[#4E4E4E] font-semibold">Pengisian Remunerasi Semester I Bulan
                             Januari-Juni

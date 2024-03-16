@@ -7,10 +7,10 @@ content: [
   theme: {
     extend: {
         colors: {
-            myprimary: 'rgb(var(--primary-color) / <alpha-value>)',
-            mysecondary: 'rgb(var(--secondary-color) / <alpha-value>)',
-            mydisabled: 'rgb(var(--disabled-color) / <alpha-value>)',
-            mydark: 'rgb(var(--dark-color) / <alpha-value>)',
+            myprimary: '#072D6E',
+            mysecondary: '#F5F7FB',
+            mydisabled: '#697790',
+            mydark: '#1B1B1B',
         },
         fontFamily: {
             sans: ['Open Sans', 'sans-serif'],

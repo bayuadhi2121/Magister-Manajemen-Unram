@@ -3,13 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
-        --primary-color: 7 45 110;
-        --secondary-color: 245 247 251;
-        --disabled-color: 105 119 144;
-        --dark-color: 27 27 27;
-    }
-
     body {
         @apply text-white;
     }

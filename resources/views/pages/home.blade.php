@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Home')
+
 @section('content')
     {{-- Hero --}}
     <section class="relative h-[500px] bg-mysecondary" x-data="{ currentIndex: 0, images: ['https://picsum.photos/2000/2000', 'https://picsum.photos/1900/1900', 'https://picsum.photos/2100/2100'], autoSlide: null }" x-init="autoSlide = setInterval(() => { currentIndex = (currentIndex + 1) % images.length; }, 10000)">
@@ -26,7 +28,7 @@
         <div class="mycontainer space-y-8">
             <h1 class="text-5xl text-myprimary font-bold">Pengumuman</h1>
 
-            <div class="flex flex-wrap justify-between text-mydark gap-[40px]">
+            <div class="flex flex-wrap justify-between gap-[40px]">
                 @for ($i = 1; $i <= 10; $i++)
                     <article class="min-w-[250px] max-w-[500px] flex-[1_1_35%] space-y-4">
                         <h2 class="text-[18px] text-[#4E4E4E] font-semibold">Pengisian Remunerasi Semester I Bulan
@@ -64,7 +66,8 @@
 
                             <div class="px-6 pb-6 pt-4 space-y-3 text-black">
                                 <h3 class="text-[22px] text-myprimary font-semibold">Acara Wisuda 2024</h3>
-                                <p class="text-mydark/80">Lorem ipsum dolor sit amet consectetur. Sed vitae iaculis massa
+                                <p class="text-mydark text-opacity-80">Lorem ipsum dolor sit amet consectetur. Sed vitae
+                                    iaculis massa
                                     nullam est neque blandit
                                     hac.
                                     Tellus elit sed enim egestas. Lorem sit morbi cursus habitant nibh egestas.</p>
@@ -105,7 +108,8 @@
                             </div>
 
                             <div class="px-4 flex flex-col justify-between text-black">
-                                <h3 class="text-lg text-mydark/80 font-bold">Long title of the news! Lorem Ipsum dolor sit
+                                <h3 class="text-lg text-[#181818] text-opacity-80 font-bold">Long title of the news! Lorem
+                                    Ipsum dolor sit
                                     amet constectura
                                     sit
                                     dep</h3>

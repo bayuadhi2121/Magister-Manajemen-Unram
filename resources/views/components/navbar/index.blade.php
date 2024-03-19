@@ -2,11 +2,11 @@
 
     @php
         $listMenu = [
+            'Layanan Digital' => route('layanan-digital'),
+            'Publikasi' => '#',
             'Tentang Kami' => '#',
             'Akademik' => '#',
-            'Riset dan Inovasi' => '#',
-            'Kerjasama' => '#',
-            'Pendaftaran' => '#',
+            'Jurnal' => '#',
         ];
     @endphp
 

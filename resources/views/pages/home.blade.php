@@ -6,7 +6,7 @@
     {{-- Hero --}}
     <section class="relative h-[500px] bg-mysecondary" x-data="{ currentIndex: 0, images: ['https://picsum.photos/2000/2000', 'https://picsum.photos/1900/1900', 'https://picsum.photos/2100/2100'], autoSlide: null }" x-init="autoSlide = setInterval(() => { currentIndex = (currentIndex + 1) % images.length; }, 10000)">
         <template x-for="(image, index) in images" :key="index">
-            <img class="absolute min-w-full size-full object-cover object-center transition-all duration-1000"
+            <img class="absolute size-full object-cover object-center transition-all duration-1000"
                 :class="currentIndex == index ? 'opacity-100' : 'opacity-0'" :src="image" alt="MM"
                 loading="lazy">
         </template>

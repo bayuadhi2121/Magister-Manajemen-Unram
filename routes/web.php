@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages.home');
 });
+Route::get('/layanan-digital/', function () {
+    return view('pages.layanan-digital');
+})->name('layanan-digital');
 
 Route::get('/auth/login/', function () {
     return view('pages.auth.login');
